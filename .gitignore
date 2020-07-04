@@ -1,6 +1,8 @@
 # Artifacts
 stash/
 
+.idea
+.vscode
 # Logs
 logs
 *.log

@@ -1,0 +1,25 @@
+@import "mixin";
+
+.section-how {
+  padding-bottom: 54px;
+  text-align: center;
+}
+
+.section-how__title {
+  padding-top: 45px;
+  padding-bottom: 34px;
+  @include myfont-style($font-montserrat, 20px, 33px, bold, rgb(24, 25, 29));
+  @media (min-width: 768px) {
+    @include myfont-style($font-montserrat, 26px, 33px, bold, rgb(24, 25, 29));
+  }
+  @media (min-width: 1280px) {
+    @include myfont-style($font-montserrat, 42px, 63px, bold, rgb(24, 25, 29));
+    padding-bottom: 45px;
+  }
+}
+.section-how__item {
+  width: 290px;
+  height: 268px;
+  box-shadow: 4px 6.928px 23.68px 8.32px rgba(29,29,27,.11);
+  padding: 0 30px 0 30px;
+}
