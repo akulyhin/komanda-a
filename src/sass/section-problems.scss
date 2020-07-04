@@ -17,17 +17,19 @@ $font-montserrat: "Montserrat", sans-serif;
     max-width: 1340px;
   }
 }
-.wrapper {
+.wrapper-problems {
+  position: relative;
   background-color: #111517;
 }
-.section {
+.section-problems {
+  position: relative;
   height: 520px;
-  margin-bottom: 220px;
+  margin-bottom: 160px;
   @media (min-width: 768px) {
     height: 334px;
   }
 }
-.section__title {
+.section-problems__title {
   max-width: 230px;
   padding-top: 50px;
   padding-bottom: 18px;
@@ -40,19 +42,29 @@ $font-montserrat: "Montserrat", sans-serif;
   @media (min-width: 1280px) {
     padding-top: 80px;
   }
-  @media (min-width: 1280px) {
-    padding-top: 125px;
-  }
-
 }
-.section__title--span {
+.section-problems__item--icon {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  fill: #444;
+  @media (min-width: 768px) {
+    z-index: 0;
+  }
+}
+.section-problems__title--span {
   color: #ff6b08;
 }
-.wrapper-list {
+.wrapper-list__problems {
   background-color: #fff;
   box-shadow: 4px 6.928px 15.54px 5.46px rgba(29,29,27,.04);
+  position: relative;
+  @media (min-width: 768px) {
+    z-index: 1;
+  }
 }
-.section__list {
+.section-problems__list {
   padding: 15px 25px 30px 25px;
 
   @media (min-width: 768px) {
@@ -67,8 +79,23 @@ $font-montserrat: "Montserrat", sans-serif;
     justify-content: space-around;
   }
 }
-.section__item {
-  padding-bottom: 12px;
+.section-problems__item {
+  &:not(:nth-last-child(-n + 1)) {
+    @media (max-width: 767px) {
+      padding-bottom: 12px;
+    }
+  }
+  &:not(:nth-last-child(-n + 2)) {
+    @media (min-width: 768px) and (max-width: 1279px) {
+      padding-bottom: 12px;
+    }
+  }
+  &:not(:nth-last-child(-n + 3)) {
+    @media (min-width: 1280px) {
+      padding-bottom: 12px;
+    }
+  }
+
   @media (min-width: 768px) {
     width: 200px;
   }
@@ -76,8 +103,8 @@ $font-montserrat: "Montserrat", sans-serif;
     width: 250px;
   }
 }
-.section__item--desc {
-  padding-bottom: 10px;
+
+.section-problems__item--desc {
   @include myfont-style($font-montserrat, 14px, 30px, 400, #ff6b08);
   &::before {
     content: "";
@@ -89,7 +116,7 @@ $font-montserrat: "Montserrat", sans-serif;
     margin-bottom: 5px;
   }
 }
-.section__item--title {
+.section-problems__item--title {
   @include myfont-style($font-montserrat, 13px, 20px, bold, rgb(24, 25, 29));
   @media (min-width: 1280px) {
     @include myfont-style($font-montserrat, 18px, 30px, bold, rgb(24, 25, 29));

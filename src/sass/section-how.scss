@@ -5,6 +5,18 @@ $font-montserrat: "Montserrat", sans-serif;
   padding-bottom: 54px;
   text-align: center;
 }
+.section-how__list {
+  @media (min-width: 768px) and (max-width: 1279px) {
+    max-width: 600px;
+  }
+  @media (min-width: 768px) {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+}
 
 .section-how__title {
   padding-top: 45px;
@@ -19,12 +31,38 @@ $font-montserrat: "Montserrat", sans-serif;
   }
 }
 .section-how__item {
+  cursor: pointer;
   width: 290px;
   height: 268px;
   box-shadow: 4px 6.928px 23.68px 8.32px rgba(29,29,27,.11);
   padding: 30px 30px 0 30px;
+  @media (min-width: 1280px) {
+    padding: 40px 40px 0 40px;
+  }
   &:not(:last-child) {
     margin-bottom: 15px;
+  }
+  &:hover,
+  &:focus {
+    background-color: #ff6b08;
+  }
+  &:hover .section-how__item--icon,
+  &:focus .section-how__item--icon {
+    fill: #fff;
+  }
+  &:hover .section-how__item--title,
+  &:focus .section-how__item--title,
+  &:hover .section-how__item--desc,
+  &:focus .section-how__item--desc {
+    color: #fff;
+  }
+  @media (min-width: 1280px) {
+    width: 390px;
+    height: 390px;
+  }
+  @media (min-width: 1680px) {
+    width: 430px;
+    height: 430px;
   }
 }
 .section-how__item--icon {
@@ -40,7 +78,13 @@ $font-montserrat: "Montserrat", sans-serif;
     background-color: #ff6b08;
     margin: 18px auto 16px auto;
   }
+  @media (min-width: 1280px) {
+    @include myfont-style($font-montserrat, 18px, 30px, bold, rgb(17, 21, 23));
+  }
 }
 .section-how__item--desc {
   @include myfont-style($font-montserrat, 11px, 20px, 400, rgb(133, 133, 133));
+  @media (min-width: 1280px) {
+    @include myfont-style($font-montserrat, 15px, 32px, 400, rgb(133, 133, 133));
+  }
 }
