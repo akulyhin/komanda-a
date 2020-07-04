@@ -18,11 +18,16 @@ $font-montserrat: "Montserrat", sans-serif;
   }
 }
 .wrapper-problems {
-  position: relative;
+  //@media (min-width: 768px) {
+  //  background-image: url("../images/fire.png");
+  //  background-repeat: no-repeat;
+  //  background-position: right top;
+  //  background-size: contain;
+  //}
   background-color: #111517;
+
 }
 .section-problems {
-  position: relative;
   height: 520px;
   margin-bottom: 160px;
   @media (min-width: 768px) {
@@ -43,26 +48,13 @@ $font-montserrat: "Montserrat", sans-serif;
     padding-top: 80px;
   }
 }
-.section-problems__item--icon {
-  position: absolute;
-  z-index: -1;
-  right: 0;
-  bottom: 0;
-  fill: #444;
-  @media (min-width: 768px) {
-    z-index: 0;
-  }
-}
+
 .section-problems__title--span {
   color: #ff6b08;
 }
 .wrapper-list__problems {
   background-color: #fff;
   box-shadow: 4px 6.928px 15.54px 5.46px rgba(29,29,27,.04);
-  position: relative;
-  @media (min-width: 768px) {
-    z-index: 1;
-  }
 }
 .section-problems__list {
   padding: 15px 25px 30px 25px;
