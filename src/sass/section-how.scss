@@ -27,6 +27,7 @@ $font-montserrat: "Montserrat", sans-serif;
     padding-bottom: 45px;
   }
 }
+
 .section-how__item {
   position: relative;
   cursor: pointer;
@@ -49,6 +50,10 @@ $font-montserrat: "Montserrat", sans-serif;
   &:hover .section-how__item--desc,
   &:focus .section-how__item--desc {
     color: #fff;
+  }
+  &:hover .section-how__item--title::after,
+  &:focus .section-how__item--title::after {
+    background-color: #fff;
   }
   @media (min-width: 1280px) {
     width: 390px;
