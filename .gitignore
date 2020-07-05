@@ -62,3 +62,7 @@ typings/
 
 # dotenv environment variables file
 .env
+# Ignor Fonts
+src/fonts
+# ignor Normalize
+src\sass\normalize.scss
