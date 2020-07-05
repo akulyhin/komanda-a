@@ -17,14 +17,19 @@ function showSlides(n) {
   const slides = document.getElementsByClassName("slider__item");
   console.log(slides);
   const dots = document.getElementsByClassName("slider-nav__item");
-  if (n > slides.length) {index = 1}
-  if (n < 1) {index = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+
+  if (n > slides.length) {
+    index = 1
+  }
+  else if (n < 1) {
+    index = slides.length
   }
 
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  for (const slide of slides) {
+    slide.style.display = "none";
+  }
+  for (const dot of dots) {
+    dot.className = dot.className.replace(" active", "");
   }
 
   slides[index-1].style.display = "block";
