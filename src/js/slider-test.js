@@ -33,6 +33,7 @@ function showSlides(n) {
   }
 
   slides[index-1].style.display = "block";
+  // стили для active прописать при наведении на маленькое фото в кружочке
   dots[index-1].className += " active";
   // hideSliderNavItem(n);
 }
