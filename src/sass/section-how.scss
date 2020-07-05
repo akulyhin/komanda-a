@@ -18,12 +18,12 @@ $font-montserrat: "Montserrat", sans-serif;
 }
 .section-how__title {
   padding-bottom: 34px;
-  @include myfont-style($font-montserrat, 20px, 33px, bold, rgb(24, 25, 29));
+  @include myfont-style($font-montserrat, 20px, 33px, 800, rgb(24, 25, 29));
   @media (min-width: 768px) {
-    @include myfont-style($font-montserrat, 26px, 33px, bold, rgb(24, 25, 29));
+    @include myfont-style($font-montserrat, 26px, 33px, 800, rgb(24, 25, 29));
   }
   @media (min-width: 1280px) {
-    @include myfont-style($font-montserrat, 42px, 63px, bold, rgb(24, 25, 29));
+    @include myfont-style($font-montserrat, 42px, 63px, 800, rgb(24, 25, 29));
     padding-bottom: 45px;
   }
 }

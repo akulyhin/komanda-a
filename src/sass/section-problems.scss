@@ -51,9 +51,9 @@ $font-montserrat: "Montserrat", sans-serif;
   max-width: 230px;
   padding-top: 50px;
   padding-bottom: 18px;
-  @include myfont-style($font-montserrat, 20px, 30px, bold, #fff);
+  @include myfont-style($font-montserrat, 20px, 30px, 800, #fff);
   @media (min-width: 768px) {
-    @include myfont-style($font-montserrat, 26px, 33px, bold, #fff);
+    @include myfont-style($font-montserrat, 26px, 33px, 800, #fff);
     max-width: 456px;
     padding-top: 63px;
     padding-bottom: 24px;
@@ -61,13 +61,13 @@ $font-montserrat: "Montserrat", sans-serif;
   @media (min-width: 1280px) {
     padding-top: 77px;
     padding-bottom: 50px;
-    @include myfont-style($font-montserrat, 42px, 56px, bold, #fff);
+    @include myfont-style($font-montserrat, 42px, 56px, 800, #fff);
     max-width: 800px;
   }
   @media (min-width: 1680px) {
     padding-top: 77px;
     padding-bottom: 70px;
-    @include myfont-style($font-montserrat, 42px, 56px, bold, #fff);
+    @include myfont-style($font-montserrat, 42px, 56px, 800, #fff);
     max-width: 800px;
   }
 }
