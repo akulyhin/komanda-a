@@ -46,6 +46,11 @@ prev.addEventListener("click", (event) => {
   plusSlides(-1);
 })
 
+const sliderNav = document.querySelector(".slider-nav__item");
+
+for (let i = 1; i < sliderNav.length; i++)
+  slide.addEventListener("click", currentSlide(i));
+
 // function hideSliderNavItem(n) {
 //   const dots = document.getElementsByClassName("slider-nav__item");
 //   for (let i = 0; i < n; i++) {
