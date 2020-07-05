@@ -17,16 +17,18 @@ $font-montserrat: "Montserrat", sans-serif;
   @media (min-width: 1680px) {
     background-image: url("../images/fire-desk1680-min.png");
   }
-  @media (min-width: 768px) and ((min-resolution: 192dpi), (min-resolution: 2dppx)) {
-    background-image: url("../images/fire-table@2x-min.png");
-  }
-  @media (min-width: 1280px) and ((min-resolution: 192dpi), (min-resolution: 2dppx)) {
-    background-image: url("../images/fire-desk1280@2x-min.png");
-  }
-  @media (min-width: 1680px) and ((min-resolution: 192dpi), (min-resolution: 2dppx)) {
-    background-image: url("../images/fire-desk1680@2x-min.png");
-  }
 
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @media (min-width: 768px) {
+      background-image: url("../images/fire-table@2x-min.png");
+    }
+    @media (min-width: 1280px) {
+      background-image: url("../images/fire-desk1280@2x-min.png");
+    }
+    @media (min-width: 1680px) {
+      background-image: url("../images/fire-desk1680@2x-min.png");
+    }
+  }
 
 }
 .section-problems {
