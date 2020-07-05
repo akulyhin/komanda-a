@@ -5,19 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Placeholder title</title>
-
-
-    <!-- Добавляем стили из CDN -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
-    <!-- Добавляем тему по умолчанию из CDN -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
-
     <!-- Сюда будет всталена ссылка на файл стилей -->
     <!-- inject:css -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- endinject -->
 
-   
   </head>
 
   <body>
@@ -26,124 +18,138 @@
     <!-- Section reviews -->
     
     <section class="reviews">
-      <div class="container">
-
-        <h2 class="reviews__title">
-          Отзывы наших  <div>выпусников</div>
-        </h2>
-
-        <!-- Slider -->
-        <div class="owl-carousel">
-          <!-- Slider item -->
-          <div class="slider__item">
-            <div class="carousel__card">
-              <div class="carousel__img">
-                <img src="./images/Tonya.png" alt="Тоня Кучеровская">
-              </div>
-              <div class="carousel__social">
-                <img width="20px" src="./images/icons/vk.svg">
-              </div>
-              <h3 class="carousel__title">
-                Тоня Кучеровская
-              </h3>
-
-              <span class="carousel__education">
-                Выпуск 2015-го года,  Національний університет біоресурсів 
-              і природокористування України
-              </span>
-
-              <span class="carousel__subscribes">
-                За короткий час занять з Оленою я опанувала граматику і поповнила свій 
-                зовсім пустий словниковий запас. З першого ж заняття я зрозуміла, що знаходжуся 
-                у своїй тарілці ... <a href="#">Читать дальше</a>
-              </span>
-
-            </div>
+        <div class="container">
+    
+          <div class="menu__button">
+            <div class="menu__button-middle"></div>
           </div>
-          <!-- /Slider item -->
-
-
-
+    
+    
+          <h2 class="reviews__title">
+            Отзывы наших  <div>выпусников</div>
+          </h2>
+    
+          <!-- Slider -->
+        <div class="slider-block">
+          <div class="slider">
+            <!-- Slider item -->
+            <div class="slider__item">
+              <div class="slider__card">
+                <!-- Img-Box -->
+                <div class="slider__img-box">
+                <div class="slider__img">
+                  <img src="./images/Tonya.png" alt="Тоня Кучеровская">
+                </div>
+                <div class="slider__social">
+                  <img width="20px" src="./images/icons/vk.svg">
+                </div>
+              </div>
+              <!-- Img-Box -->
+    
+              <div class="slider__content">
+                <h3 class="slider__title">
+                  Тоня Кучеровская
+                </h3>
+    
+                <span class="slider__education">
+                  Выпуск 2015-го года,  Національний університет біоресурсів 
+                і природокористування України
+                </span>
+    
+                <span class="slider__subscribes">
+                  За короткий час занять з Оленою я опанувала граматику і поповнила свій 
+                  зовсім пустий словниковий запас. З першого ж заняття я зрозуміла, що знаходжуся 
+                  у своїй тарілці ... <a href="#">Читать дальше</a>
+                </span>
+              </div>
+    
+              </div>
+            </div>
+            <!-- /Slider item -->
+    
+          </div>
+          
+          <div class="arrow-buttons">
+            <button class="arrow prev-arrow">
+              <svg>
+                <use href="/images/icons/arrows-sprite.svg#icon-back"></use>
+              </svg>
+            </button>
+    
+            <button class="arrow next-arrow">
+              <svg>
+                <use href="/images/icons/arrows-sprite.svg#icon-next"></use>
+              </svg>
+            </button>
+          </div>
+          
+          <div class="slider-nav">         
+            <div class="slider-nav__item"><img src="images/slider/reviews-2.png"></div>
+            <div class="slider-nav__item"><img src="images/slider/reviews-3.png" ></div>
+            <div class="slider-nav__item"><img src="images/slider/reviews-4.png" ></div>
+            
+          </div>
+    
         </div>
-
-        
-        <div class="slider-nav">
-          <button class="arrow prev-arrow">
-            <svg>
-              <use href="/images/icons/arrows-sprite.svg#icon-back"></use>
-            </svg>
-          </button>
-          <div class="slider-nav__item"><img src="images/slider/reviews-2.png"></div>
-          <div class="slider-nav__item"><img src="images/slider/reviews-3.png" ></div>
-          <div class="slider-nav__item"><img src="images/slider/reviews-4.png" ></div>
-          <button class="arrow next-arrow">
-            <svg>
-              <use href="/images/icons/arrows-sprite.svg#icon-next"></use>
-            </svg>
-          </button>
         </div>
-
-
-      </div>
-    </section>
-    <!-- Section reviews -->
-
+      </section>
+      <!-- Section reviews -->
 
     <!-- End SECTION: registration form -->
     <section class="registration">
-      <div class="container">
-
-        <h2 class="registration__title">
-          Регистрация на <span>бесплатную</span> телефонную 
-          <span>консультацию</span> по нюансам ЗНО по английскому языку
-        </h2>
-
-        <div class="registration__subtitle">
-          Оставь заявку на участие в <span>бесплатном занятии.</span> С вами свяжется консультант 
-          и ответит на вопросы.
+        <div class="container">
+    
+          <h2 class="registration__title">
+            Регистрация на <span>бесплатную</span> телефонную 
+            <span>консультацию</span> по нюансам ЗНО по английскому языку
+          </h2>
+    
+          <div class="registration__subtitle">
+            Оставь заявку на участие в <span>бесплатном занятии.</span> С вами свяжется консультант 
+            и ответит на вопросы.
+          </div>
+    
+          <form class="form" id="form">
+            <input class="form__name form__control" type="text" placeholder="Имя*" required>
+            <input class="form__tel form__control" type="tel" placeholder="Телефон*" required>
+            <div>
+            <button class="form__submit" type="submit">Хочу на бесплатное занятие</button>
+            </div>
+          </form>
+    
         </div>
+      </section>
+    <!-- End SECTION: registration form -->
 
-        <form class="form" id="form">
-          <input class="form__name form__control" type="text" placeholder="Имя*" required>
-          <input class="form__tel form__control" type="tel" placeholder="Телефон*" required>
-          <button class="form__submit" type="submit">Хочу на бесплатное занятие</button>
-        </form>
+    <!-- SECTION: contacts -->
+    
+    <section class="contacts">
+        <div class="container">
+      
+        <div class="contact-box">
+        <div class="phone">
+          <a href="tel:+380000000000">+38 (000) 000 00 00</a>
+          </div>
+      
+          <div class="instagram">
+            <img src="/images/icons/instagram.png" >
+          </div>
+      
+          <a href="#"><img src="/images/contact-logo.png" class="contact-logo"></a>
+        </div>
+        </div>
+      </section>
+      <!-- End SECTION: contacts -->
 
-      </div>
-    </section>
-<!-- End SECTION: registration form -->
-
-<!-- SECTION: contacts -->
-
-<section class="contacts">
-
-<div class="phone">
-  <a href="tel:+380000000000">+38 (000) 000 00 00</a>
-</div>
-
-<div class="instagram">
-  <img src="/images/icons/instagram.png" >
-</div>
-
-<a href="#"><img src="/images/contact-logo.png" class="contact-logo"></a>
-
-</section>
-<!-- End SECTION: contacts -->
-
-<!-- Footer -->
-<footer class="site-footer">
-   <p class="copyright">©  Все права защищены, 2019</p>
-</footer>
-<!-- /Footer -->
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p class="copyright">©  Все права защищены, 2019</p>
+     </footer>
+     <!-- /Footer -->
 
     <!-- Сюда будет всталена ссылка на файл скриптов -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- inject:js -->
     <!-- endinject -->
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-
-   
 
 
   </body>

@@ -1,6 +1,10 @@
-/*
- * Все паршалы импортировать в этот файл
- */
 
+@import 'fonts/fonts';
+@import 'helpers/variables';
 @import 'normalize.scss';
 @import 'base.scss';
+
+@import 'components/slider';
+@import 'components/registration';
+@import 'components/contacts';
+@import 'components/footer';
