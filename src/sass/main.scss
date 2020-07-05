@@ -1,7 +1,7 @@
 
 @import 'fonts/fonts';
 @import 'helpers/variables';
-@import 'normalize.scss';
+@import 'normalize';
 @import 'base.scss';
 
 @import 'components/slider';
@@ -11,9 +11,11 @@
 
 @import 'mixin-miki';
 @import 'section-problems';
-@import 'section-how.scss';
+@import 'section-how';
 @import 'how-anime';
 
-@import 'mobile-menu.scss';
-@import 'header.scss';
-@import 'menu_button.scss';
+@import 'mobile-menu';
+@import 'header';
+@import 'menu_button';
+
+@import 'components/programme';
