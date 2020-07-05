@@ -8,15 +8,16 @@ function plusSlides(n) {
   showSlides(index += n);
 }
 
+// пока что бесполезна
 function currentSlide(n) {
   showSlides(index = n);
 }
 
 function showSlides(n) {
   let i;
-  const slides = document.getElementsByClassName("slider__item");
+  const slides = document.querySelectorAll(".slider__item");
   console.log(slides);
-  const dots = document.getElementsByClassName("slider-nav__item");
+  const dots = document.querySelectorAll(".slider-nav__item");
 
   if (n > slides.length) {
     index = 1
@@ -46,11 +47,6 @@ next.addEventListener("click", (event)=> {
 prev.addEventListener("click", (event) => {
   plusSlides(-1);
 })
-
-const sliderNav = document.querySelector(".slider-nav__item");
-
-for (let i = 1; i < sliderNav.length; i++)
-  slide.addEventListener("click", currentSlide(i));
 
 // function hideSliderNavItem(n) {
 //   const dots = document.getElementsByClassName("slider-nav__item");
