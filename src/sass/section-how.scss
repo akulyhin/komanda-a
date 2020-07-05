@@ -1,0 +1,89 @@
+@import "mixin-miki.scss";
+$font-montserrat: "Montserrat", sans-serif;
+
+.section-how {
+  padding-bottom: 54px;
+  text-align: center;
+}
+.section-how__list {
+  @media (min-width: 768px) and (max-width: 1279px) {
+    max-width: 600px;
+  }
+  @media (min-width: 768px) {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.section-how__title {
+  padding-bottom: 34px;
+  @include myfont-style($font-montserrat, 20px, 33px, 800, rgb(24, 25, 29));
+  @media (min-width: 768px) {
+    @include myfont-style($font-montserrat, 26px, 33px, 800, rgb(24, 25, 29));
+  }
+  @media (min-width: 1280px) {
+    @include myfont-style($font-montserrat, 42px, 63px, 800, rgb(24, 25, 29));
+    padding-bottom: 45px;
+  }
+}
+
+.section-how__item {
+  position: relative;
+  cursor: pointer;
+  width: 290px;
+  height: 268px;
+  box-shadow: 4px 6.928px 23.68px 8.32px rgba(29,29,27,.11);
+  padding: 30px 30px 0 30px;
+  @media (min-width: 1280px) {
+    padding: 40px 50px 0 50px;
+  }
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  &:hover .section-how__item--icon,
+  &:focus .section-how__item--icon {
+    fill: #fff;
+  }
+  &:hover .section-how__item--title,
+  &:focus .section-how__item--title,
+  &:hover .section-how__item--desc,
+  &:focus .section-how__item--desc {
+    color: #fff;
+  }
+  &:hover .section-how__item--title::after,
+  &:focus .section-how__item--title::after {
+    background-color: #fff;
+  }
+  @media (min-width: 1280px) {
+    width: 390px;
+    height: 390px;
+  }
+  @media (min-width: 1680px) {
+    width: 430px;
+    height: 430px;
+  }
+}
+.section-how__item--icon {
+  fill: #ff6b08;
+}
+.section-how__item--title {
+  @include myfont-style($font-montserrat, 13px, 20px, bold, rgb(17, 21, 23));
+  &::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #ff6b08;
+    margin: 18px auto 16px auto;
+  }
+  @media (min-width: 1280px) {
+    @include myfont-style($font-montserrat, 18px, 30px, bold, rgb(17, 21, 23));
+  }
+}
+.section-how__item--desc {
+  @include myfont-style($font-montserrat, 11px, 20px, 400, rgb(133, 133, 133));
+  @media (min-width: 1280px) {
+    @include myfont-style($font-montserrat, 15px, 32px, 400, rgb(133, 133, 133));
+  }
+}
