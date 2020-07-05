@@ -28,6 +28,7 @@ $font-montserrat: "Montserrat", sans-serif;
   }
 }
 .section-how__item {
+  position: relative;
   cursor: pointer;
   width: 290px;
   height: 268px;
@@ -38,10 +39,6 @@ $font-montserrat: "Montserrat", sans-serif;
   }
   &:not(:last-child) {
     margin-bottom: 15px;
-  }
-  &:hover,
-  &:focus {
-    background-color: #ff6b08;
   }
   &:hover .section-how__item--icon,
   &:focus .section-how__item--icon {
