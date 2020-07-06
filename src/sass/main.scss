@@ -9,7 +9,11 @@
 @import 'components/contacts';
 @import 'components/footer';
 
-@import "mixin-miki.scss";
-@import 'section-problems.scss';
-@import "section-how.scss";
-@import "how-anime.scss";
+@import 'mixin-miki';
+@import 'section-problems';
+@import 'section-how.scss';
+@import 'how-anime';
+
+@import 'mobile-menu.scss';
+@import 'header.scss';
+@import 'menu_button.scss';
