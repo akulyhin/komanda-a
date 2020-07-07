@@ -41,10 +41,15 @@
     text-align: center;
 }
 
+.slider__img img {
+    margin: 0 auto;
+}
+
 .slider__card {
     margin: 40px;
     padding: 20px 25px 50px;
     box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
+    text-align: center;
     @media (min-width: 768px) {
         text-align: left;
         display: flex;
@@ -154,14 +159,13 @@
     margin-right: 20px;
 }
 
-.slider-nav .slick-slide {
-    width: 58px !important;
-    height: 58px;
-}
-
-.slider-nav .slick-current {
+.slick-current .slider-nav__img  {
  border: 2px solid $main-orange-color;
  border-radius: 50%;
+
+ &:focus {
+     outline: 0;
+ }
 }
 
 .arrow svg {
@@ -186,4 +190,4 @@
      .next-arrow {
         margin-right: -40px;
     }
-    }
+}
