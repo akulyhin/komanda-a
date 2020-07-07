@@ -28,6 +28,7 @@ $font-montserrat: "Montserrat", sans-serif;
   }
 }
 .section-how__item {
+  position: relative;
   cursor: pointer;
   width: 290px;
   height: 268px;
@@ -37,11 +38,19 @@ $font-montserrat: "Montserrat", sans-serif;
     padding: 40px 50px 0 50px;
   }
   &:not(:last-child) {
-    margin-bottom: 15px;
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+    }
   }
-  &:hover,
-  &:focus {
-    background-color: #ff6b08;
+  &:not(:nth-last-child(-n + 2)) {
+    @media (min-width: 768px) and (max-width: 1279px) {
+      margin-bottom: 15px;
+    }
+  }
+  &:not(:nth-last-child(-n + 3)) {
+    @media (min-width: 1280px) {
+      margin-bottom: 15px;
+    }
   }
   &:hover .section-how__item--icon,
   &:focus .section-how__item--icon {
@@ -52,6 +61,10 @@ $font-montserrat: "Montserrat", sans-serif;
   &:hover .section-how__item--desc,
   &:focus .section-how__item--desc {
     color: #fff;
+  }
+  &:hover .section-how__item--title::after,
+  &:focus .section-how__item--title::after {
+    background-color: #fff;
   }
   @media (min-width: 1280px) {
     width: 390px;
