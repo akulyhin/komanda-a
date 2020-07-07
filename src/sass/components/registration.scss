@@ -16,6 +16,12 @@
         background-image: url('/images/registration/registration-bg_1680.jpg');
     }
 }
+@media (min-width: 1280px) {
+.registration .container {
+    max-width: 930px;
+    padding: 85px 0;
+    }
+}
 
 .registration__title {
     font-size: 14px;
