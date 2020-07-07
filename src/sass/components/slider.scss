@@ -46,16 +46,18 @@
 }
 
 .slider__card {
-    margin: 40px;
+    background-color: #fff;
     padding: 20px 25px 50px;
-    box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
+    box-shadow: 4px 6.928px 11.96px 11.04px rgba(29, 29, 27, 0.06);
     text-align: center;
     @media (min-width: 768px) {
+        margin: 20px;
         text-align: left;
         display: flex;
         padding: 45px 65px 50px 35px;
     }
     @media (min-width: 1280px) {
+        margin: 40px;
         padding: 45px 65px 50px 88px;
     }
 }
@@ -144,6 +146,8 @@
     border: none;
     background-color: transparent;
     position: absolute;
+    z-index: 99;
+    bottom: -55px;
 
     @media (min-width: 768px) {
         top: 50%;
@@ -182,20 +186,28 @@ height: 54px;
     height: 18px;
 }
 
-@media (min-width: 768px) {
 .prev-arrow {
     right: 100%;
+}
+
+.next-arrow {
+    left: 100%;
+}
+
+@media (min-width: 768px) {
+.prev-arrow {
+    right: 96%;
  }
  .next-arrow {
-     left: 100%;
+     left: 96%;
 }
 }
 
 @media (min-width: 1280px) {
     .prev-arrow {
-        margin-left: -40px;
+        right: 100%;
      }
      .next-arrow {
-        margin-right: -40px;
+        left: 100%;
     }
 }
