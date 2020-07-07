@@ -158,14 +158,22 @@
 .slider-nav .slick-slide:not(:last-child) {
     margin-right: 20px;
 }
+.slider-nav__img {
+width: 54px;
+height: 54px;
+
+&:focus {
+    outline: 0;
+}
+}
 
 .slick-current .slider-nav__img  {
  border: 2px solid $main-orange-color;
  border-radius: 50%;
 
  &:focus {
-     outline: 0;
- }
+    outline: 0;
+    }
 }
 
 .arrow svg {
