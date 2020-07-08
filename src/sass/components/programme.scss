@@ -26,7 +26,6 @@
   padding-top: 43px;
   background-position: 120% 84%;
   background-size: 40%;
-  overflow: hidden;
 
   @media (min-width: 768px) {
     background-position: 118% 900px;
@@ -87,7 +86,7 @@
 
     @media (min-width: 1280px) {
       width: 100vw;
-      transform: translateX(calc((-100vw + 1200px)/2));
+      transform: translateX(calc((-100vw + 1190px)/2));
       height: 2px;
       top: -20.5px;
     }

@@ -110,6 +110,14 @@
     }
 }
 
+.slider__subscribes span {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: inline;
+    }
+}
+
 .slider-nav {
     display: flex;
     justify-content: center;
