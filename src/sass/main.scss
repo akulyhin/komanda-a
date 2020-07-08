@@ -4,18 +4,20 @@
 @import 'normalize';
 @import 'base';
 
-@import 'components/slider';
-@import 'components/registration';
-@import 'components/contacts';
-@import 'components/footer';
+@import 'mobile-menu';
+@import 'header';
+@import 'menu_button';
 
 @import 'mixin-miki';
 @import 'section-problems';
 @import 'section-how';
 @import 'how-anime';
 
-@import 'mobile-menu';
-@import 'header';
-@import 'menu_button';
-
 @import 'components/programme';
+
+@import 'components/slider';
+@import 'components/registration';
+@import 'components/contacts';
+@import 'components/footer';
+
+
