@@ -34,6 +34,7 @@
   }
 
   @media (min-width: 1280px) {
+    background: url(../images/programme-bg_desc.png) #111517 no-repeat;
     background-position: -6% 550px;
     background-size: 620px 350px;
     padding-bottom: 400px;
@@ -255,6 +256,10 @@
   @media (min-width: 1280px) {
     width: 1210px;
     top: 62.5%;
+  }
+
+  @media (min-width: 1680px) {
+    top: 75%;
   }
 }
 

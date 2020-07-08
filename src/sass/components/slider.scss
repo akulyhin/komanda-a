@@ -26,6 +26,12 @@
 
 .slider-block {
     position: relative;
+    margin: 0 5px;
+
+    @media (min-width: 768px) {
+        margin: 0;
+    }
+
     @media (min-width: 1280px) {
         max-width: 1065px;
         margin: 0 auto;
@@ -43,6 +49,11 @@
 
 .slider__img img {
     margin: 0 auto;
+    width: 80px;
+
+    @media (min-width: 1280px) {
+        width: 145px;
+    }
 }
 
 .slider__card {
@@ -171,6 +182,7 @@
 .slider-nav .slick-slide:not(:last-child) {
     margin-right: 20px;
 }
+
 .slider-nav__img {
 width: 54px;
 height: 54px;
