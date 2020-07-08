@@ -1,0 +1,66 @@
+.contacts {
+    padding: 35px 0 15px;
+    text-align: center;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+            flex-direction: row;
+            align-items: center;
+    }
+}
+
+    @media (min-width: 768px) {
+    .contact-box a {
+        order: -1;
+    }  
+    .phone {
+        margin-left: 85px;
+    }
+    .instagram {
+        margin-left: 60px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .phone {
+        margin-left: 255px;
+    }
+
+    .instagram {
+        margin-left: 65px;
+    }
+}
+
+@media (min-width: 1680px) {
+    .phone {
+        margin-left: 310px;
+    }
+}
+
+
+.phone a {
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+
+    &::before {
+        content: '';
+        background-image: url('/images/icons/icon-tel.png');
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        margin-right: 7px;
+        vertical-align: middle;
+    }
+}
+
+.instagram {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}

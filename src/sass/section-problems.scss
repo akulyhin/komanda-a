@@ -1,0 +1,151 @@
+@import "mixin-miki.scss";
+
+$font-montserrat: "Montserrat", sans-serif;
+
+.wrapper-problems {
+  @media (max-width: 767px) {
+    background-color: #111517;
+  }
+  @media (min-width: 768px) {
+    background-image: url("../images/fire-table-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media (min-width: 1280px) {
+    background-image: url("../images/fire-desk1280-min.png");
+  }
+  @media (min-width: 1680px) {
+    background-image: url("../images/fire-desk1680-min.png");
+  }
+
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @media (min-width: 768px) {
+      background-image: url("../images/fire-table@2x-min.png");
+    }
+    @media (min-width: 1280px) {
+      background-image: url("../images/fire-desk1280@2x-min.png");
+    }
+    @media (min-width: 1680px) {
+      background-image: url("../images/fire-desk1680@2x-min.png");
+    }
+  }
+
+}
+.section-problems {
+  height: 520px;
+  margin-bottom: 205px;
+  @media (min-width: 768px) {
+    height: 334px;
+    margin-bottom: 229px;
+  }
+  @media (min-width: 1280px) {
+    height: 528px;
+    margin-bottom: 168px;
+  }
+  @media (min-width: 1680px) {
+    height: 560px;
+  }
+}
+.section-problems__title {
+  max-width: 230px;
+  padding-top: 50px;
+  padding-bottom: 18px;
+  @include myfont-style($font-montserrat, 20px, 30px, 800, #fff);
+  @media (min-width: 768px) {
+    @include myfont-style($font-montserrat, 26px, 33px, 800, #fff);
+    max-width: 456px;
+    padding-top: 63px;
+    padding-bottom: 24px;
+  }
+  @media (min-width: 1280px) {
+    padding-top: 77px;
+    padding-bottom: 50px;
+    @include myfont-style($font-montserrat, 42px, 56px, 800, #fff);
+    max-width: 800px;
+  }
+  @media (min-width: 1680px) {
+    padding-top: 77px;
+    padding-bottom: 70px;
+    @include myfont-style($font-montserrat, 42px, 56px, 800, #fff);
+    max-width: 800px;
+  }
+}
+
+.section-problems__title--span {
+  color: #ff6b08;
+}
+.wrapper-list__problems {
+  background-color: #fff;
+  box-shadow: 4px 6.928px 15.54px 5.46px rgba(29,29,27,.04);
+}
+.section-problems__list {
+  padding: 15px 25px 30px 25px;
+
+  @media (min-width: 768px) {
+    padding: 30px 25px 38px 25px;
+    width: 510px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media (min-width: 1280px) {
+    padding: 48px 25px 50px 25px;
+    width: 1000px;
+    justify-content: space-around;
+  }
+  @media (min-width: 1680px) {
+    padding: 66px 25px 72px 25px;
+    width: 1000px;
+    justify-content: space-around;
+  }
+}
+.section-problems__item {
+  &:not(:nth-last-child(-n + 1)) {
+    @media (max-width: 767px) {
+      margin-bottom: 12px;
+    }
+  }
+  &:not(:nth-last-child(-n + 2)) {
+    @media (min-width: 768px) and (max-width: 1279px) {
+      margin-bottom: 18px;
+    }
+  }
+  &:not(:nth-last-child(-n + 3)) {
+    @media (min-width: 1280px) {
+      margin-bottom: 38px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 200px;
+  }
+  @media (min-width: 1280px) {
+    width: 270px;
+  }
+}
+
+.section-problems__item--desc {
+  @include myfont-style($font-montserrat, 14px, 30px, 400, #ff6b08);
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 2px;
+    background-color: #ff6b08;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  @media (min-width: 1280px) {
+    @include myfont-style($font-montserrat, 21px, 1.4, 400, #ff6b08);
+    margin-bottom: 8px;
+  }
+}
+.section-problems__item--title {
+  @include myfont-style($font-montserrat, 13px, 20px, bold, rgb(24, 25, 29));
+  @media (min-width: 1280px) {
+    @include myfont-style($font-montserrat, 18px, 30px, bold, rgb(24, 25, 29));
+  }
+}
+

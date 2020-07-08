@@ -1,0 +1,151 @@
+
+.registration {
+    background-image: url('/images/registration/registration-bg.jpg');
+    padding: 60px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    @media (min-width: 768px) {
+        background-image: url('/images/registration/registration-bg_tablet.jpg');
+        background-size: cover;
+    }
+    @media (min-width: 1280px) {
+        background-image: url('/images/registration/registration-bg_1280.jpg');
+    }
+    @media (min-width: 1680px) {
+        background-image: url('/images/registration/registration-bg_1680.jpg');
+    }
+}
+
+@media (min-width: 768px) {
+.registration .container {
+max-width: 550px;
+    }
+}
+@media (min-width: 1280px) {
+.registration .container {
+    max-width: 930px;
+    padding: 85px 0;
+    }
+}
+
+.registration__title {
+    font-size: 14px;
+    line-height: 26px;
+    color: #fff;
+    font-weight: 800;
+
+    @media (min-width: 768px) {
+        font-size: 22px;
+        line-height: 38px;
+    }
+    @media (min-width: 1280px) {
+        font-size: 37px;
+        line-height: 50px;
+    }
+}
+
+.registration__title span {
+    color: $main-orange-color;
+}
+
+.registration__subtitle {
+    padding: 30px 0;
+    color: #fff;
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: 600;
+
+    @media (min-width: 768px) {
+        font-size: 15px;
+    }
+    @media (min-width: 1280px) {
+        font-size: 18px;
+        line-height: 24px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    @media (min-width: 1680px) {
+        font-size: 25px;
+        line-height: 37px;
+        max-width: 760px;
+    }
+}
+
+.registration__subtitle span {
+    color: $main-orange-color;
+}
+
+.form__control {
+    height: 50px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    padding-left: 20px;
+    width: 100%;
+
+    &::placeholder {
+        color: #fff;
+        font-weight: 500;
+    }
+
+    @media (min-width: 768px) {
+        width: 400px;
+    }
+    @media (min-width: 1280px) {
+        width: 625px;
+        height: 70px;
+        font-size: 20px;
+    }
+}
+
+.form__name {
+    margin-bottom: 20px;
+}
+
+.form__tel {
+    margin-bottom: 55px;
+    @media (min-width: 768px) {
+        margin-bottom: 30px;
+    }
+}
+
+.form__submit {
+    background: $main-orange-color;
+    border: 0;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 20px 15px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+
+    @media (min-width: 1280px) {
+        font-size: 14px;
+    }
+
+    @media (min-width:1680px) {
+        padding: 30px 20px;
+    }
+}
+
+.form__submit::after {
+    content: '';
+    display: block;
+    width: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    background: #000;
+    transition: width .3s linear;
+}
+
+.form__submit:hover::after {
+    width: 100%;
+}

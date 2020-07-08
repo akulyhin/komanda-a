@@ -1,0 +1,60 @@
+.menu__button {
+    cursor: pointer;
+    padding: 6px 5px;
+
+    &::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin: 5px 0;
+    background-color: #000;
+    outline: 1px solid transparent;
+    transition: all .3s ease;
+    }
+    
+    &::after {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 2px;
+        margin: 5px 0;
+        background-color: #000;
+        outline: 1px solid transparent;
+        transition: all .3s ease;
+    }
+    @media (min-width: 1280px){
+        display: none;       
+    }
+}
+
+.menu__button-middle::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin: 5px 0;
+    background-color: #000;
+    outline: 1px solid transparent;
+}
+.hidden-menu-button.menu__button .menu__button-middle::after {
+    display: none;
+}
+
+.hidden-menu-button.menu__button {
+    position: relative;
+    z-index: 1000;
+    
+}
+
+.hidden-menu-button.menu__button::after{ 
+    transform: translateY(-5px) rotate(-45deg); 
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.hidden-menu-button.menu__button::before{ 
+    transform: translateY(2px) rotate(45deg);
+    z-index: 1000;
+    background-color: #fff;
+}

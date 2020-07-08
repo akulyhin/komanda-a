@@ -1,8 +1,24 @@
-/*
- * Все паршалы импортировать в этот файл
- */
-
+@import 'fonts/fonts';
 @import 'helper/variables';
-@import 'normalize.scss';
-@import 'base.scss';
-@import 'tutor.scss';
+@import 'normalize';
+@import 'base';
+
+@import 'mobile-menu';
+@import 'header';
+@import 'menu_button';
+
+@import 'mixin-miki';
+@import 'section-problems';
+@import 'section-how';
+@import 'how-anime';
+
+@import 'tutor';
+
+@import 'components/programme';
+
+@import 'components/slider';
+@import 'components/registration';
+@import 'components/contacts';
+@import 'components/footer';
+
+

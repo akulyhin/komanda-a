@@ -1,0 +1,131 @@
+
+
+.toggle-menu {
+  background-color: rgba(0, 0, 0, .95);
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+  position: fixed;
+  transition: transform.3s linear;
+  z-index: 999;
+}
+
+.toggle-menu.active-menu {
+  transform: translateX(0);
+}
+
+.toggle-menu__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 7px 0 7px;
+  margin-bottom: 70px;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  background-image: url('../images/icon/close-btn.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 24px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.toggle-menu__nav {
+  margin-bottom: 60px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    margin: 0 auto;
+    width: 350px;
+  }
+}
+
+.toggle-menu__list {
+  list-style-type: none;
+  display: block;
+  padding-left: 10px;
+}
+
+.toggle-menu__list-link {
+  font-size: 20px;
+  color: #fff;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color .3s linear;
+  letter-spacing: 1.5px;
+
+  @media (min-width: 768px) {
+    font-size: 26px;
+  }
+}
+
+.toggle-menu__list-link:hover {
+  color: rgb(240, 108, 32); 
+}
+
+.toggle-menu__list-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.toggle-menu__tel {
+  border: 3px solid rgb(251, 103, 18);
+  color: rgb(251, 103, 18);
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  position: relative;
+  text-align: center;
+  @media (min-width: 768px) {
+    visibility: hidden;
+  }
+  
+}
+
+.ins3 {
+  position: absolute;
+  width: 0%; height: 100%;
+  background: rgb(251, 103, 18);
+  top: 0;  left: auto; right: 0;
+  z-index: -1;
+  transition: all 500ms ease;
+}
+
+.toggle-menu__tel:hover {
+  color: #fff; 
+  box-shadow:none;
+}
+.toggle-menu__tel:hover .ins3{
+    position: absolute;
+    width: 100%; height: 100%;
+    background: rgb(251, 103, 18);
+    top: 0; left: 0; right: 0;
+    z-index: -1;
+}
+
+.ins4 {
+  position: absolute;
+  width: 100%; height: 0%;
+  background: rgb(251, 103, 18);
+  top: 0;  left: auto; right: 0;
+  z-index: -1;
+  transition: all 500ms ease;
+}
+
+.toggle-menu__tel:hover .ins4{
+    position: absolute;
+    width: 100%; height: 100%;
+    background: rgb(251, 103, 18);
+    top: 0; left: 0; right: 0;
+    z-index: -1;
+}

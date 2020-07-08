@@ -1,0 +1,42 @@
+.section-how__item--hov-1 {
+  position: absolute;
+  width: 0%; height: 100%;
+  background: #fff;
+  top: 0;  left: auto; right: 0;
+  z-index: -1;
+  transition: all 500ms ease;
+  transform: rotate(10deg);
+}
+
+.section-how__item:hover {
+  color: white;
+  box-shadow:none;
+}
+
+.section-how__item:hover .section-how__item--hov-1{
+  position: absolute;
+  width: 100%; height: 100%;
+  background: #ff6b08;
+  top: 0; left: 0; right: 0;
+  z-index: -1;
+  transform: rotate(0);
+}
+
+.section-how__item--hov-2 {
+  position: absolute;
+  width: 100%; height: 0%;
+  background: #fff;
+  top: 0;  left: auto; right: 0;
+  z-index: -1;
+  transition: all 500ms ease;
+  transform: rotate(-10deg);
+}
+
+.section-how__item:hover .section-how__item--hov-2{
+  position: absolute;
+  width: 100%; height: 100%;
+  background: #ff6b08;
+  top: 0; left: 0; right: 0;
+  z-index: -1;
+  transform: rotate(0);
+}
