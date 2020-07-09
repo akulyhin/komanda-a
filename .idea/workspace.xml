@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c6e23c2-d195-42d8-89a0-6f4ecfac63ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="3c6e23c2-d195-42d8-89a0-6f4ecfac63ca" name="Default Changelist" comment="miki-dev -&gt; refactoring, change section-how.scss selectors: .section-how__item, .section-how__item--title">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/section-how.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/section-how.scss" afterDir="false" />
     </list>
@@ -41,11 +58,42 @@
       <workItem from="1594205765289" duration="491000" />
       <workItem from="1594206274079" duration="317000" />
       <workItem from="1594218398871" duration="48000" />
-      <workItem from="1594279394576" duration="3903000" />
+      <workItem from="1594279394576" duration="4061000" />
+      <workItem from="1594292013996" duration="2871000" />
     </task>
+    <task id="LOCAL-00001" summary="miki-dev -&gt; refactoring, change section-how.scss selectors: .section-how__item, .section-how__item--title">
+      <created>1594284031336</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594284031336</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="miki-dev -&gt; refactoring, change section-how.scss selectors: .section-how__item, .section-how__item--title" />
+    <option name="LAST_COMMIT_MESSAGE" value="miki-dev -&gt; refactoring, change section-how.scss selectors: .section-how__item, .section-how__item--title" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="275" width="800" height="564" key="Vcs.Push.Dialog.v2" timestamp="1594284035645">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="555" y="275" width="800" height="564" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1594284035645" />
   </component>
 </project>
