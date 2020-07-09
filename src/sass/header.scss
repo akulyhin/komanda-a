@@ -54,9 +54,13 @@
 .menu_desktop-link {
     font-family: 'Montserrat', sans-serif;
     color: #b9b9b9;
-    font-size: 16px;
+    font-size: 12px;
     text-decoration: none;
     transition: all 0.25s linear;
+
+    @media (min-width:1680px) {
+        font-size: 14px;
+    }
 }
 
 .menu_desktop-link:hover{
