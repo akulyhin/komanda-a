@@ -26,6 +26,12 @@
 
 .slider-block {
     position: relative;
+    margin: 0 5px;
+
+    @media (min-width: 768px) {
+        margin: 0;
+    }
+
     @media (min-width: 1280px) {
         max-width: 1065px;
         margin: 0 auto;
@@ -41,15 +47,28 @@
     text-align: center;
 }
 
+.slider__img img {
+    margin: 0 auto;
+    width: 80px;
+
+    @media (min-width: 1280px) {
+        width: 145px;
+    }
+}
+
 .slider__card {
+    background-color: #fff;
     padding: 20px 25px 50px;
-    box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
+    box-shadow: 4px 6.928px 11.96px 11.04px rgba(29, 29, 27, 0.06);
+    text-align: center;
     @media (min-width: 768px) {
+        margin: 20px;
         text-align: left;
         display: flex;
         padding: 45px 65px 50px 35px;
     }
     @media (min-width: 1280px) {
+        margin: 40px;
         padding: 45px 65px 50px 88px;
     }
 }
@@ -102,6 +121,14 @@
     }
 }
 
+.slider__subscribes span {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: inline;
+    }
+}
+
 .slider-nav {
     display: flex;
     justify-content: center;
@@ -112,6 +139,7 @@
 
 .slider-nav__item {
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .slider-nav:last-child {
@@ -136,27 +164,72 @@
     cursor: pointer;
     border: none;
     background-color: transparent;
+    position: absolute;
+    z-index: 99;
+    bottom: -55px;
+    height: 24px;
+
+    @media (min-width: 768px) {
+        top: 50%;
+    }
+}
+
+.slider-nav .slick-track {
+    display: flex;
+    justify-content: center;
+}
+
+.slider-nav .slick-slide:not(:last-child) {
+    margin-right: 20px;
+}
+
+.slider-nav__img {
+width: 54px;
+height: 54px;
+margin: 0 auto;
+
+&:focus {
+    outline: 0;
+}
+}
+
+.slick-current .slider-nav__img  {
+ border: 2px solid $main-orange-color;
+ border-radius: 50%;
+
+ &:focus {
+    outline: 0;
+    }
 }
 
 .arrow svg {
     fill: $main-orange-color;
     width: 18px;
+    height: 18px;
+}
+
+.prev-arrow {
+    right: 100%;
+}
+
+.next-arrow {
+    left: 100%;
 }
 
 @media (min-width: 768px) {
 .prev-arrow {
-    margin-left: -15px;
+    right: 96%;
  }
  .next-arrow {
-    margin-right: -15px;
+     left: 96%;
 }
 }
 
 @media (min-width: 1280px) {
     .prev-arrow {
-        margin-left: -40px;
+        right: 100%;
      }
      .next-arrow {
-        margin-right: -40px;
+        left: 100%;
     }
-    }
+}

@@ -1,7 +1,6 @@
-
 .menu__button {
-    display: inline-block;
     cursor: pointer;
+    padding: 6px 5px;
 
     &::before {
     content: '';
@@ -13,7 +12,7 @@
     outline: 1px solid transparent;
     transition: all .3s ease;
     }
-
+    
     &::after {
         content: '';
         display: block;
@@ -45,23 +44,17 @@
 .hidden-menu-button.menu__button {
     position: relative;
     z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 10px;
     
 }
 
-.hidden-menu-button.menu__button::after{
-    transform: rotate(45deg);
+.hidden-menu-button.menu__button::after{ 
+    transform: translateY(-5px) rotate(-45deg); 
     z-index: 1000;
     background-color: #fff;
-    position: relative;
-  
 }
-.hidden-menu-button.menu__button::before{    
-    transform: rotate(-45deg) translate(16px, 16px);
+
+.hidden-menu-button.menu__button::before{ 
+    transform: translateY(2px) rotate(45deg);
     z-index: 1000;
     background-color: #fff;
-    position: relative;
 }
