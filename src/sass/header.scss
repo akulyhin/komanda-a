@@ -4,11 +4,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container__header{
+    @media (min-width: 1680px) {
+    width: 1340px;
+    padding: 0;
+    margin-left: -80px;
+    }
+}
 .header {
     min-width: 320px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
     padding-top:25px; ;
     width: 280px;
     background-color: #fefefe;
@@ -30,6 +35,10 @@
     @media (min-width: 1280px){
         margin-top: 45px;
     }
+    @media (min-width: 1680px) {
+        max-width: 1340px;
+        padding-right: 20px;
+      }
 }
 /*=======TABLET========= */ 
 .menu_desktop{
