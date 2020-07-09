@@ -41,8 +41,14 @@
     display: none;
 }
 
-.hidden-menu-button.menu__button {
+.menu__button-container {
     position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.hidden-menu-button.menu__button {
+    position: fixed;
     z-index: 1000;
     
 }
