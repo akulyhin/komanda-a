@@ -1,0 +1,406 @@
+.tutor {
+  display: block;
+  margin-top: 240px;
+  letter-spacing: 0.5px;
+  @media (min-width: 768px) {
+    margin-top: 220px;
+  }
+  @media (min-width: 1280px) {
+    margin-top: 85px;
+  }
+  @media (min-width: 1680px) {
+    margin-top: 311px;
+  }
+}
+
+.tutor__container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media (min-width: 768px) {
+    max-width: 688px;
+    padding: 0;
+  }
+  @media (min-width: 1280px) {
+    max-width: 1210px;
+  }
+  @media (min-width: 1680px) {
+    max-width: 1340px;
+  }
+}
+
+.tutor__title {
+  @extend %font-extra;
+  color: $color-bold;
+  font-size: 20px;
+  line-height: 30px;
+  display: block;
+  margin-bottom: 20px;
+  @media (min-width: 768px) {
+    font-size: 26px;
+    line-height: 62.54px;
+    margin-bottom: 12px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 42px;
+    margin-bottom: 50px;
+  }
+  @media (min-width: 1680px) {
+    font-size: 45.83px;
+    margin-bottom: 43px;
+  }
+}
+
+.tutor__name {
+  @extend %font-extra;
+  color: $color-bold;
+  font-size: 16px;
+  line-height: 29.17px;
+  display: block;
+  margin-top: 20px;
+  @media (min-width: 768px) {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 29.17px;
+    line-height: 29.17px;
+  }
+}
+
+.tutor__name::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: #d1d1d1;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  @media (min-width: 768px) {
+    margin-top: 10px;
+  }
+  @media (min-width: 1280px) {
+    margin-bottom: 35px;
+  }
+  @media (min-width: 1680px) {
+    margin-bottom: 27px;
+  }
+}
+
+.tutor__achievements-list {
+  list-style: none;
+  padding: 0px;
+  @media (min-width: 768px) {
+    padding-right: 45px;
+  }
+  @media (min-width: 1280px) {
+    padding-right: 120px;
+  }
+  @media (min-width: 1680px) {
+    padding-right: 168px;
+  }
+}
+
+.tutor__achievments-item {
+  padding-left: 35px;
+  @extend %font-semibold;
+  font-size: 13px;
+  line-height: 20px;
+  color: $color-bold;
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  @media (min-width: 1280px) {
+    font-size: 16.67px;
+    line-height: 29.17px;
+    margin-bottom: 27px;
+    padding-left: 40px;
+  }
+  @media (min-width: 1680px) {
+    margin-bottom: 22px;
+  }
+}
+
+.tutor__achievments-item::before {
+  content: '';
+  width: 16px;
+  height: 12px;
+  display: inline-block;
+  background-image: url(../images/icon-check.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 0px;
+  top: 7px;
+  @media (min-width: 768px) {
+    width: 17px;
+    height: 15px;
+  }
+  @media (min-width: 1280px) {
+    width: 24px;
+    height: 20px;
+    background-image: url(../images/icon-check@2x.png);
+  }
+}
+
+.tutor__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  @media (min-width: 768px) {
+    min-width: 247px;
+    height: 100%;
+  }
+  @media (min-width: 1280px) {
+    width: 494px;
+    height: 647px;
+  }
+  @media (min-width: 1680px) {
+    width: 495px;
+    height: 645px;
+  }
+}
+
+.tutor__achievements-list::after {
+  content: '';
+  display: block;
+  width: 27px;
+  height: 2px;
+  background: $color-accent;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  @media (min-width: 1280px) {
+    margin-bottom: 30px;
+  }
+  @media (min-width: 1680px) {
+    margin-bottom: 25px;
+  }
+}
+
+.tutor__text {
+  @extend %font-medium;
+  color: $color-light;
+  font-size: 11px;
+  line-height: 20px;
+  display: block;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  @media (min-width: 768px) {
+    padding-left: 0px;
+    margin-bottom: 25px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 16.67px;
+    line-height: 29.17px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: 1680px) {
+    margin-bottom: 18px;
+  }
+}
+
+.tutor__link {
+  @extend %font-regular;
+  font-size: 11px;
+  line-height: 29.17px;
+  color: $color-accent;
+  text-decoration: underline;
+  text-align: center;
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+  @media (min-width: 768px) {
+    text-align: left;
+    margin-bottom: 31px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 29px;
+    margin-bottom: 86px;
+  }
+  @media (min-width: 1680px) {
+    margin-bottom: 132px;
+  }
+}
+
+.warranties {
+  letter-spacing: 0.5px;
+}
+
+.warranties__title {
+  @extend %font-extra;
+  font-size: 20px;
+  line-height: 62.54px;
+  display: block;
+  text-align: center;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  @media (min-width: 768px) {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 42px;
+    line-height: 62.54px;
+    margin-bottom: 26px;
+  }
+  @media (min-width: 1680px) {
+    font-size: 45.83px;
+    line-height: 62.54px;
+    margin-bottom: 35px;
+  }
+}
+
+.warranties-backround {
+  background: $bg-warranties;
+  @media (min-width: 768px) {
+    background: none;
+  }
+}
+
+.warranties-container {
+  width: 280px;
+  display: block;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    width: 688px;
+    background: $bg-warranties;
+    padding: 0;
+  }
+  @media (min-width: 1280px) {
+    width: 1210px;
+  }
+  @media (min-width: 1680px) {
+    width: 1340px;
+  }
+}
+
+.warranties__list {
+  list-style: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+  @media (min-width: 768px) {
+    padding: 35px 60px 30px 60px;
+  }
+  @media (min-width: 1280px) {
+    padding: 50px 135px 50px 115px;
+  }
+  @media (min-width: 1680px) {
+    padding: 60px 145px 55px 90px;
+  }
+}
+
+.warranties__list::after {
+  content: '';
+  display: block;
+  border: 1px dotted #bababa;
+  position: absolute;
+  width: 1px;
+  height: 70%;
+  top: 38px;
+  left: 6px;
+  z-index: 1;
+  @media (min-width: 768px) {
+    height: 65%;
+    left: 67px;
+  }
+  @media (min-width: 1280px) {
+    left: 124px;
+    top: 59px;
+  }
+  @media (min-width: 1680px) {
+    height: 60%;
+    left: 99px;
+    top: 70px;
+  }
+}
+
+.warranties__item {
+  padding-left: 36px;
+  @extend %font-medium;
+  font-size: 11px;
+  line-height: 20px;
+  color: $color-bold;
+  display: block;
+  position: relative;
+  @media (min-width: 768px) {
+    padding-left: 34px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 29px;
+  }
+  @media (min-width: 1680px) {
+    font-size: 20.83px;
+    line-height: 29.17px;
+    padding-left: 60px;
+  }
+}
+
+.warranties__item:not(:last-child) {
+  margin-bottom: 20px;
+  @media (min-width: 768px) {
+    margin-bottom: 25px;
+  }
+}
+
+.warranties__item::before {
+  content: '';
+  width: 13px;
+  height: 18px;
+  display: inline-block;
+  background-image: url(../images/icon-fire.png);
+  fill: $color-accent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 1px;
+  top: 2px;
+  z-index: 2;
+  @media (min-width: 768px) {
+    width: 15px;
+    height: 19px;
+  }
+  @media (min-width: 1280px) {
+    width: 21px;
+    height: 26px;
+    background-image: url(../images/icon-fire@2x.png);
+  }
+  @media (min-width: 1680px) {
+    width: 22px;
+    height: 28px;
+  }
+}
+
+.warranties__note {
+  color: $color-accent;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .tutor__info {
+    display: flex;
+  }
+  .tutor__details {
+    max-width: 440px;
+    justify-content: space-between;
+    padding-left: 45px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .tutor__details {
+    max-width: 717px;
+    padding-left: 85px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .tutor__details {
+    max-width: 845px;
+    padding-right: 102px;
+  }
+}

@@ -1,0 +1,33 @@
+$main-orange-color: #ff6b08;
+
+%font-extra {
+  all: unset;
+  font-family: 'Montserrat-ExtraBold', sans-serif;
+  font-weight: 800;
+}
+
+%font-semibold {
+  all: unset;
+  font-family: 'Montserrat-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%font-medium {
+  all: unset;
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%font-regular {
+  all: unset;
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-weight: 400;
+}
+
+$color-bold: #111517;
+
+$color-light: #858585;
+
+$color-accent: #ff6b08;
+
+$bg-warranties: #f1f1f1;
