@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+* {
+  margin: 0;
+  padding: 0;
+}
+
+>>>>>>> syoz
 .wrapper-programme {
   padding: 0 15px 0 15px;
   margin: 0 auto;
@@ -23,8 +31,13 @@
   background: url(../images/programme-bg.png) #111517 no-repeat;
   position: relative;
   padding-bottom: 345px;
+<<<<<<< HEAD
   padding-top: 43px;
   background-position: 120% 84%;
+=======
+  background-position: 120% 84%;
+  padding-top: 43px;
+>>>>>>> syoz
   background-size: 40%;
 
   @media (min-width: 768px) {
@@ -34,10 +47,24 @@
   }
 
   @media (min-width: 1280px) {
+<<<<<<< HEAD
     background: url(../images/programme-bg_desc.png) #111517 no-repeat;
     background-position: -6% 550px;
     background-size: 620px 350px;
     padding-bottom: 400px;
+=======
+    background-position: -6% 590px;
+    background-size: 790px 450px;
+    padding-bottom: 470px;
+    padding-top: 80px;
+  }
+
+  @media (min-width: 1680px) {
+    padding-top: 130px;
+    padding-bottom: 300px;
+    background-position: -6% 700px;
+    // background-size: 790px 450px;
+>>>>>>> syoz
   }
 }
 
@@ -45,7 +72,11 @@
   text-align: center;
   font-size: 20px;
   font-family: Montserrat;
+<<<<<<< HEAD
   font-weight: 900;
+=======
+  font-weight: 800;
+>>>>>>> syoz
   letter-spacing: 1px;
   margin-bottom: 20px;
 
@@ -58,8 +89,19 @@
   }
 
     @media (min-width: 1280px) {
+<<<<<<< HEAD
       font-size: 42px;
       margin: 0 0 60px 42px;
+=======
+      width: 1210px;
+      font-size: 42px;
+      margin: 0 auto 70px auto;
+  }
+
+    @media (min-width: 1680px) {
+      font-size: 46px;
+      margin-bottom: 118px;
+>>>>>>> syoz
   }
 }
 
@@ -81,15 +123,29 @@
     left: 1.2px;
 
     @media (min-width: 768px) {
+<<<<<<< HEAD
       height: 790px;
+=======
+      height: 780px;
+>>>>>>> syoz
       left: 0px;
     }
 
     @media (min-width: 1280px) {
       width: 100vw;
+<<<<<<< HEAD
       transform: translateX(calc((-100vw + 1190px)/2));
       height: 2px;
       top: -20.5px;
+=======
+      transform: translateX(calc((-100vw + 1210px)/2));
+      height: 2px;
+      top: -33.5px;
+    }
+    
+    @media (min-width: 1680px) {
+      height: 4px;
+>>>>>>> syoz
     }
   }
 
@@ -125,6 +181,7 @@
     }
 
     @media (min-width: 1280px) {
+<<<<<<< HEAD
       left: 41px;
       top: -28.5px;
       height: 17px;
@@ -134,6 +191,23 @@
 
   @media (min-width: 1280px) {
     width: 220px;
+=======
+      right: 91.4%;
+      top: -40px;
+      height: 17px;
+      width: 17px;
+    }
+
+    @media (min-width: 1680px) {
+      height: 20px;
+      width: 20px;
+      top: -41px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    width: 215px;
+>>>>>>> syoz
   }
 }
 
@@ -146,6 +220,7 @@
   font-weight: 700;
   margin-top: 16px;
 
+<<<<<<< HEAD
   @media (min-width: 768px) {
     width: 110px;
   }
@@ -155,6 +230,21 @@
     font-size: 19px;
     letter-spacing: 1.59px;
   }
+=======
+  @media (min-width: 1280px) {
+    margin-left: 0;
+    font-size: 19px;
+    letter-spacing: 1.59px;
+  }
+
+  @media (min-width: 1680px) {
+    font-size: 21px;
+
+    &::first-letter {
+      font-size: 30px;
+    }
+  }
+>>>>>>> syoz
 }
 
 .programme__title,
@@ -187,19 +277,45 @@
   @media (min-width: 768px) {
     width: 140px;
   }
+<<<<<<< HEAD
+=======
+
+  @media (min-width: 1280px) {
+    margin-left: 0;
+    margin-top: 32px;
+
+    &:first-child {
+      margin-top: 46px;
+    }
+
+    @media (min-width: 1680px) {
+      &:first-child {
+      margin-top: 32px;
+      }
+    }
+  }
+>>>>>>> syoz
 }
 
 .programme__inner-list-item:not(:last-child) {
 
   @media (min-width: 1280px) {
+<<<<<<< HEAD
     width: 220px;
+=======
+    width: auto;
+>>>>>>> syoz
   }
 }
 
 .programme__inner-list-item:last-child {
 
   @media (min-width: 1280px) {
+<<<<<<< HEAD
     width: 180px;
+=======
+    width: auto;
+>>>>>>> syoz
   }
 }
 
@@ -224,6 +340,13 @@
     font-size: 18px;
     letter-spacing: 0.9px;
   }
+<<<<<<< HEAD
+=======
+
+  @media (min-width: 1680px) {
+    font-size: 21px;
+  }
+>>>>>>> syoz
 }
 
 .programme__inner-list-text {
@@ -232,7 +355,10 @@
   margin-bottom: 9px;
   font-family: Montserrat;
   font-size: 11px;
+<<<<<<< HEAD
   letter-spacing: 0.55px;
+=======
+>>>>>>> syoz
   font-weight: 400;
 
   @media (min-width: 1280px) {
@@ -250,16 +376,29 @@
 
   @media (min-width: 768px) {
     width: 688px;
+<<<<<<< HEAD
     top: 85%;
+=======
+    top: 87%;
+>>>>>>> syoz
   }
 
   @media (min-width: 1280px) {
     width: 1210px;
+<<<<<<< HEAD
     top: 62.5%;
   }
 
   @media (min-width: 1680px) {
     top: 75%;
+=======
+    top: 67%;
+  }
+
+  @media (min-width: 1680px) {
+    top: 77%;
+    width: 1339px;
+>>>>>>> syoz
   }
 }
 
@@ -277,7 +416,15 @@
 
   @media (min-width: 1280px) {
     justify-content: space-between;
+<<<<<<< HEAD
     padding: 55px 30px 55px 90px;
+=======
+    padding: 55px 80px 8px 80px;
+  }
+
+  @media (min-width: 1680px) {
+    padding-bottom: 30px;
+>>>>>>> syoz
   }
 }
 
@@ -288,9 +435,19 @@
     margin-bottom: 18px;
   }
 
+<<<<<<< HEAD
   @media (min-width: 768px) {
     width: 300px;
     margin-bottom: 18px;
+=======
+  @media (min-width: 1280px) {
+    width: 295px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 1680px) {
+    width: 340px;
+>>>>>>> syoz
   }
 }
 
@@ -310,8 +467,20 @@
     text-align: center;
   }
 
+<<<<<<< HEAD
   @media (min-width: 768px) {
     font-size: 42px;
+=======
+  @media (min-width: 1280px) {
+    font-size: 42px;
+    letter-spacing: 2.1px;
+    padding-right: 88px;
+  }
+
+  @media (min-width: 1680px) {
+    font-size: 46px;
+    padding-right: 61px;
+>>>>>>> syoz
   }
 }
 
@@ -329,7 +498,15 @@
 
   @media (min-width: 1280px) {
     font-size: 18px;
+<<<<<<< HEAD
     width: 295px;
+=======
+    width: auto;
+  }
+
+  @media (min-width: 1680px) {
+    font-size: 21px;
+>>>>>>> syoz
   }
 }
 
