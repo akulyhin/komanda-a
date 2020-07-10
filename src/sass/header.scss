@@ -4,25 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container__header{
-    @media (min-width: 1680px) {
-    width: 1340px;
-    padding: 0;
-    margin-left: -80px;
-    }
-}
 .header {
-    min-width: 320px;
     margin: 0 auto;
     padding-top:25px; ;
-    width: 280px;
     background-color: #fefefe;
-    @media(min-width: 768px){
-        width: 728px;
-    }
-    @media (min-width: 1280px){
-        width: 1200px;
-    }
 }
 .header__top-container{
     display: flex;
@@ -37,8 +22,7 @@
     }
     @media (min-width: 1680px) {
         max-width: 1340px;
-        padding-right: 20px;
-      }
+    }
 }
 /*=======TABLET========= */ 
 .menu_desktop{
@@ -82,10 +66,15 @@
 .header_consulteition{
     display: none;
     margin-left: auto;
-    margin-right: 25px;
 
-      @media(min-width: 768px){
+
+    @media(min-width: 768px){
         display: block;
+        margin-right: 25px;
+    }
+    @media (min-width: 1280px){
+        margin-right: 0px;
+        
     }
 }
 .header_consulteition_btn {
@@ -102,8 +91,8 @@
     background:#fff;
     width: 290px;
     height: 60px;
-    transition: .3s;
-}
+    transition: .4s;
+    }
 
 .header_consulteition_btn:hover {
     // background-color: rgb(240, 108, 32);
@@ -285,7 +274,7 @@
 .services__item {
     list-style: none;
     display: flex;
-    width: 215px;
+    width: 270px;
     margin-bottom: 26px;
     position: relative;
 }
