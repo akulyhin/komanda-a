@@ -12,3 +12,14 @@ for (let anchor of anchors) {
     })
   })
 }
+
+
+$(window).scroll(function (){
+  var posY=window.scrollY; 
+
+  if (posY > 150){
+        $('.back-to-top').css('display', 'inline-block');			
+  } else{
+     $('.back-to-top').css('display', 'none');				
+  }
+});

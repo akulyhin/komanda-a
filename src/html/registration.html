@@ -12,13 +12,14 @@
         и ответит на вопросы.
       </div>
 
-      <form class="form" id="form">
-        <input class="form__name form__control" type="text" placeholder="Имя*" required>
-        <input class="form__tel form__control" type="tel" placeholder="Телефон*" required>
+      <form class="form" id="form" method="post">
+        <input class="form__name form__control" name="name" type="text" placeholder="Имя*" required>
+        <input class="form__tel form__control" name="phone" type="tel" placeholder="Телефон*" required>
         <div>
         <button class="form__submit" type="submit">Хочу на бесплатное занятие</button>
         </div>
       </form>
+      <div id="post_form_success"></div>
 
     </div>
   </section>

@@ -13,7 +13,13 @@ closeButton.onclick = function () {
     menuButton.classList.toggle('hidden-menu-button');
 };
 
-menuLinks.onclick = function() {
-    toggleMenu.classList.remove('active-menu');
-    menuButton.classList.remove('hidden-menu-button');
-}
+
+$('.toggle-menu__list-link').click(function() {
+    $('.toggle-menu').toggleClass('active-menu');
+    $('.menu__button').toggleClass('hidden-menu-button');
+});
+
+$('.toggle-menu__tel').click(function() {
+    $('.toggle-menu').toggleClass('active-menu');
+    $('.menu__button').toggleClass('hidden-menu-button');
+});
